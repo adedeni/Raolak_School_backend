@@ -35,5 +35,41 @@
 
     echo substr($string, 1, -3);
     ?>
+    <br>
+    <?php 
+    $string = "we dey outside";
+
+    print_r(explode(" ",$string));
+    ?>
+    <br>
+     <?php 
+    $number = -5.5;
+
+    echo abs($number);
+    ?>
+    <br>
+    <?php 
+    $number = -5.5;
+
+    echo round($number);
+    ?>
+    <br>
+    <?php 
+    $number = -5.5;
+
+    echo pow(2,7);
+    ?>
+    <br>
+    <?php 
+    $number = -5.5;
+
+    echo sqrt(81);//s
+    ?>
+    <br>
+    <?php 
+    $number = -5.5;
+
+    echo rand(2,7);//random
+    ?>
 </body>
 </html>
