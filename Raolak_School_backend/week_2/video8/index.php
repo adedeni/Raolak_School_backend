@@ -38,7 +38,7 @@
     ?>
     <br>
     <?php 
-    //this is for match
+    //this is for match,the difference between match and switch is that march is like ===, while switch ==
     $bool = true;
     $a = 1;
     $b = 4;
