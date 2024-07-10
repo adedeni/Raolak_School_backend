@@ -18,8 +18,9 @@ declare (strict_types=1);
     <?php
     global $test;//this is to make this variable accessible inside a function or anywhere in the script
     function newFunction(){
-        $localVariable = "this is a local scope";
+        $localVariable = "this is a local scope";//normally any variable here cannot be access outsite the function{} make it a local scope
         return $localVariable;
+        return $GLOBALS['localVariable'];//this is a superglobal to make the variable a global scope
     }
     echo newFunction();
     ?>
@@ -27,8 +28,8 @@ declare (strict_types=1);
     <?php
     $test = "adedeni";
     function myFunction() {
-    $staticVariable = 0;
-    $staticVariable++;//increment
+    static $staticVariable = 0;//putting static here means the function can be used anywhere in the script: static variable here means the variable won't reset itself so next time the variable is used the output would be 2 and it will contiue to increase
+    $staticVariable++;//increment 
     return $staticVariable;
     }
     echo myFunction();
