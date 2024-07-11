@@ -12,7 +12,12 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 
     if (empty($firstname || $lastname || $middlename || $email || $gender || $phone || $wallet )){
         exit();
-        header("Location: index.php");
+        header("Location: error404.php");
     } 
-    echo  $gender;  
+    echo  $gender; 
+    echo  $firstname;
+    echo  $lastname; 
+    echo  $wallet;
+    echo  $middlename;
+    echo  $phone;
 }

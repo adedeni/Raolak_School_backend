@@ -1,0 +1,11 @@
+firstname lastname middlename gender phone number and wallet balance emails
+
+use post to submit
+if any of the field is empty the form should not submit 
+the form for wallet balance should be integer only
+return an array of person to give first name middle name last name full name email gender phone number and wallet balance
+
+create a manipulateWalletBalance function to {if day is less than 10, multiply by the value of the day
+or if day is greater than and less than 20 multiply by 11, 20 and above multiply by 20}
+ to whatever the wallet balance of the person
+check if the fullname is greater than 50 display "name too long" else "name ok"

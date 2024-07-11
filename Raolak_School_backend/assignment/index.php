@@ -9,23 +9,24 @@
     <main>
     <form class="form" action="formhandler.php" method="post">
     <label for="firstname">Firstname</label>
-        <input id="firstname" type="text" name="firstname" placeholder="Firstname....."> <br>
+        <input id="firstname" type="text" name="firstname" placeholder="Firstname....." required> <br>
         <label for="Lastname">Lastname</label>
-        <input id="lastname" type="text" name="lastname" placeholder="Lastname.....">
+        <input id="lastname" type="text" name="lastname" placeholder="Lastname....." required>
         <br>
         <label for="Middlename">Middlename</label>
-        <input id="middlename" type="text" name="middlename" placeholder="Middlename....."> <br>
+        <input id="middlename" type="text" name="middlename" placeholder="Middlename....." required> <br>
         <label for="Gender">Gender</label> <br>
-        <input type="radio" id="male" name="gender" value="Male">
-        <label for="male">Male</label><br>
-        <input type="radio" id="female" name="gender" value="Female">
-        <label for="female">Female</label><br>
+        <select name="gender" id="gender" required>
+            <option value="none">--</option>
+            <option value="male">male</option>
+            <option value="female">female</option>
+        </select>
         <label for="phone">Phone Number:</label><br>
-        <input type="number" id="phone" name="phone" placeholder="090123567"><br>
-        <label for="wallet">Wallet Balnce</label><br>
-        <input type="number" id="wallet" name="wallet" placeholder="put your wallet balance here"><br>
+        <input type="number" id="phone" name="phone" placeholder="090123567" required><br>
+        <label for="wallet">Wallet Balance</label><br>
+        <input type="number" id="wallet" name="wallet" placeholder="put your wallet balance here" required><br>
         <label for="email">Email</label>
-        <input id="email" type="text" name="email" placeholder="put email here.....">
+        <input id="email" type="text" name="email" placeholder="put email here....." required>
         <br>
         <button type="submit" name="submit">Submit</button>
     </form>

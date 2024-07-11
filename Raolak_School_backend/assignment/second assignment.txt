@@ -1,0 +1,12 @@
+create registration pagen that has full name not longer than 50 char
+username 
+email
+phone 
+password
+
+submit it into a database name raolak school users
+
+make login page to use either username, email, or phone
+and then password
+
+make a dashboard to display the username fullname email and phonenumber
