@@ -1,4 +1,4 @@
-create registration pagen that has full name not longer than 50 char
+create registration page that has full name not longer than 50 char
 username 
 email
 phone 
