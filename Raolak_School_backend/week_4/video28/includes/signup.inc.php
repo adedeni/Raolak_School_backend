@@ -11,9 +11,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         require_once "signup_contr.inc.php";
 
         //these are error handlers
+
         
-        $pdo = new PDO("mysql:host=$host;dbname=$dbname", $dbusername, $dbpassword);
-        $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());
     }
