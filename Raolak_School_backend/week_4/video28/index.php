@@ -23,5 +23,8 @@
     <input type="text" name="email" placeholder="E-Mail">
     <button>Sign Up</button>
     </form>
+    <?php
+    check_signup_errors();
+    ?>
 </body>
 </html>

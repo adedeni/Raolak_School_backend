@@ -11,8 +11,28 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         require_once "signup_contr.inc.php";
 
         //these are error handlers
+        $errors = [];
+       if (is_input_empty($username, $pwd, $email)) {
+        $errors["empty_input"] = "Fill in all fields";
+       }
+       if (is_email_invalid($email)) {
+        $errors["invalid_email"] = "invalid email used";
+       }
+       
+       if (is_username_taken($pdo, $username)) {
+        $errors["username_taken"] = "This username already exist";
+       }
+       
+       if (is_email_registered($pdo, $email)) {
+        $errors["email_used"] = "Email already exist";
+    }
 
-        
+    require_once "config_session.inc.php";//this is to link to a start session function in our config file
+
+    if ($errors) {
+        $_SESSION["error_signup"] = $errors;
+        header("Location: ../index.php");
+    }
     } catch (PDOException $e) {
         die("Query failed: " . $e->getMessage());
     }
