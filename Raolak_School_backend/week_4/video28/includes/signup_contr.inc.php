@@ -31,4 +31,7 @@ function is_email_registered(object $pdo, string $email){
         return false;
     }
 }
+function create_user(object $pdo, string $username, string $pwd,string $email){
+    set_user ($pdo, $username, $email, $pwd);
+}
 //M-models takes care of quearing the database; V-view show output on our website C-control takes care of other function or information

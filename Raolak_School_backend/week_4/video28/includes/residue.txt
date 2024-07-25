@@ -1,0 +1,6 @@
+these are the deleted signup input from the index page
+
+
+<input type="text" name="username" placeholder="Username">
+    <input type="password" name="pwd" placeholder="Password">
+    <input type="text" name="email" placeholder="E-Mail">

@@ -12,17 +12,13 @@ require_once 'includes/signup-view.inc.php';
     <title>Document</title>
 </head>
 <body>
-    <h3>Sign-up</h3>
+    <h3>Login</h3>
 
-    <form action="includes/signup.inc.php" method="post">
-    <?php
-    signup_inputs ();
-    ?>
-    <button>Sign Up</button>
+    <form action="includes/login.inc.php" method="post">
+        <input type="text" name="username" placeholder="Username">
+        <input type="password" name="pwd" placeholder="Password">
+        <button>Login</button>
     </form>
-    <?php
-    check_signup_errors();
-    ?>
 </body>
 </html>
 
