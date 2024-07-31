@@ -1,7 +1,4 @@
 <?php
-//connecting to database myfirstdatabase
-
-//$con = "mysql:host=localhost;dbname=myfirstdatabase";
 $host = 'localhost';
 $dbname = 'myfirstdatabase';
 $dbusername = 'root';

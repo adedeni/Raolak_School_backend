@@ -3,6 +3,9 @@ username
 email
 phone 
 password
+confirm password
+state
+gender
 
 submit it into a database name raolak school users
 

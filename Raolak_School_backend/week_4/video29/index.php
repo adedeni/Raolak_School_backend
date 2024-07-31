@@ -11,7 +11,6 @@ require_once 'includes/login_view.inc.php';
     <title>Sign up</title>
 </head>
 <body>
-    <center>
         <h3>
         <?php
     output_username()
@@ -50,6 +49,5 @@ require_once 'includes/login_view.inc.php';
       <form action="includes/logout.inc.php" method="POST">
             <button><b>logout</b></button>
     </form>
-    </center>
 </body>
 </html>
