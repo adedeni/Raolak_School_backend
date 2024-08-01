@@ -13,7 +13,7 @@ require_once 'includes/login_view.inc.php';
 <body>
         <h3>
         <?php
-    output_username()
+    #output_username();
         ?>
         </h3>
         <?php
