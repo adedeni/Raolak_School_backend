@@ -1,6 +1,6 @@
 <?php
 $host = 'localhost';
-$dbname = 'myfirstdatabase';
+$dbname = 'raolak_backend';
 $dbusername = 'root';
 $dbpassword = '';
 try {

@@ -1,11 +1,11 @@
-create registration page that has full name not longer than 50 char
-username 
-email
-phone 
-password
-confirm password
-state
-gender
+create registration page that has full name not longer than 50 char and no special character
+username unique
+email unique must be validated
+phone unique 11 char
+password hashed
+confirm password hashed (not less 6 char, not = 111111 not = 000000 not = password  must )
+state select input
+gender radio input
 
 submit it into a database name raolak school users
 
@@ -13,3 +13,10 @@ make login page to use either username, email, or phone
 and then password
 
 make a dashboard to display the username fullname email and phonenumber
+
+dashboard must have edit button that leads to edit profile
+
+edit profile must have previewed data from signup with no password and gender
+new field for address
+
+then put new password

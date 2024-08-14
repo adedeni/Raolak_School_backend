@@ -8,7 +8,7 @@ require_once 'includes/login_view.inc.php';
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign up</title>
+    <title>Sign up and login</title>
 </head>
 <body>
         <h3>
@@ -17,7 +17,9 @@ require_once 'includes/login_view.inc.php';
         ?>
         </h3>
         <?php
-        if(!isset($_SESSION["user_id"])){?>
+        //if(!isset($_SESSION["user_id"])){}
+  
+        ?>
         <h3>Login</h3>
     <form action="includes/login.inc.php" method="POST">
             <input type="text" name="username" placeholder="Enter Your Username">
@@ -27,13 +29,11 @@ require_once 'includes/login_view.inc.php';
             <button><b>login</b></button>
     </form>
 
-       <?php }
-        ?>
-    
-    <?php
-   check_login_errors();
-    ?>
-            <br><br>
+       <?php
+       check_login_errors();
+       ?>
+
+
             <h3>Sign Up</h3>
             <form action="includes/signup.inc.php" method="POST">
             <?php
