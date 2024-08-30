@@ -1,0 +1,34 @@
+ssl installation web hosting etc
+
+domain name is the shop name or identifier for your website, which contain IP Address (on www must be unique)
+
+domain name is the cutomization of an IP address for easy access and remembrance
+
+SERVER is the general word to bring in many component like 
+
+in hosting AWS is the best because of their server load balancing
+
+ec2- is what will host your scripts
+rds- is where you will host your data base
+then you will buy elastic ip that will serve as identifier for your server
+then buy capacity of server, type of server
+then you will buy disk with appropiate size then attarch the disk and elastic ip with the server
+cPanel is on disk is the graphical interface to manage your server process, and database on the disk
+rout 53 handles your domain host
+
+if your website need a sensitive database you need to seperate your files and data base then use RDS relational data base instead
+shared hosting, q-hoster,host gator (are people that would buy server like aws in bulk then distribute it in retails,
+ and share each components of the server, example of nigeria share hosting is smartweb--their packages ranges between 17k-50k for different capacity
+of disk, bandwidth domain, database ssl cert, email address installation per year) you can not have access to AWS with shared hosting
+
+public ip are the ones you can see on the URL
+private ip is used to connect one component of the server to another
+WHM- is the controller of many cPanel for example
+
+snapshot is a replical of your disk
+load balancing is to have multiple server and have all copies of the server component to prevent downtime
+
+replica (master and slave) for your database to have your database in multiple place, master can read and write slave can only read.
+the essense of it is to reduce load from master and serve as backup for master.
+
+cPanel<<WHM<<AWS

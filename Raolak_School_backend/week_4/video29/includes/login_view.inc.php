@@ -8,11 +8,12 @@ function check_login_errors() {
         echo "<br>";
 
         foreach ($errors as $error) {
-            echo '<p>' . $error . '</p>';
+            echo '<p>' .$error. '</p>';
         }
         unset($_SESSION["errors_login"]);
     }
-    else if (isset($_GET['login']) && $_GET['login'] === "success"){
-        
+    else if (isset($_GET["login"]) && $_GET["login"] ==="success") {
+        echo '<br>';
+        echo '<h1>login success</h1>';
     }
 }

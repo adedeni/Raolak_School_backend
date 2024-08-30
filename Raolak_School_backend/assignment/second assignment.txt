@@ -19,4 +19,10 @@ dashboard must have edit button that leads to edit profile
 edit profile must have previewed data from signup with no password and gender
 new field for address
 
-then put new password
+then put update new password 
+
+put address for users with address on dashboard and do not put for user with no address
+do forget password to send 6 digit otp that will expire in 5 minutes but can be regenerated
+update session from edit page to spill the updated info at dashboard
+remove new password and confirm password from edit
+connect front end and backend code

@@ -7,7 +7,6 @@ function get_user(object $pdo, string $username) {
     $stmt->bindParam(":username", $username);
     $stmt->execute();
 
-    $result = $stmt->fetch(PDO::FETCH_ASSOC);
-
+    $result = $stmt ->fetch(PDO::FETCH_ASSOC);
     return $result;
 }

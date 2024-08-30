@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST METHOD"] === "POST") {
         $errors["login_incorrect"] = "Incorrect login details!";
        }
 
-  require_once "config_session.inc.php";
+  require_once 'config_session.inc.php';
 
     if ($errors) {
         $_SESSION["errors_login"] = $errors;
@@ -36,7 +36,7 @@ if ($_SERVER["REQUEST METHOD"] === "POST") {
     //this is to update the sesssion ID cookies whenever any changes is made on the website
 
     $newSessionId = session_create_id();
-
+    $newSessionid = session_create_id();
     $sessionId = $newSessionId . "_" . $result["id"];
     session_id($sessionId);
 

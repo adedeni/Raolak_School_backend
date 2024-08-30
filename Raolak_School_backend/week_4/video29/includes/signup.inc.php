@@ -1,6 +1,6 @@
 <?php
-declare(strict_types=1);
-if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+//declare(strict_types=1);
+if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 $name = $_POST['name'];
 $username = $_POST['username'];
 $pwd = $_POST['pwd'];
@@ -14,7 +14,7 @@ try {
         require_once 'signup_view.inc.php';// render interface to the browser/users
         require_once 'signup_contr.inc.php'; // handles checks and control the flow of application
         
-        //ERROR HANDLER
+        //ERROR HANDLERS
             $errors = [];
         if(is_input_empty($name, $username, $pwd, $email)){
                 $errors["empty_input"] = "Fill in all fields";

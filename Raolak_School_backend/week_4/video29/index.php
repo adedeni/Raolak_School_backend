@@ -47,7 +47,7 @@ require_once 'includes/login_view.inc.php';
     ?>
     <br><br>
       <form action="includes/logout.inc.php" method="POST">
-            <button><b>logout</b></button>
+            <button><b>Logout</b></button>
     </form>
 </body>
 </html>
